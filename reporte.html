@@ -1,0 +1,200 @@
+<!DOCTYPE html><html><head>
+      <title>reporte</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/tutsito/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="preliminar--borrador">Preliminar / Borrador </h1>
+<h1 id="informe-exploratorio-osteosarcopenia--análisis-a-53-pacientes-de-escuinapa-sinaloa">Informe Exploratorio: Osteosarcopenia | Análisis a 53 Pacientes de Escuinapa, Sinaloa. </h1>
+<hr>
+<p><strong>Estudio:</strong> Dr. Arturo Rizo Topete.<br>
+<strong>Análisis:</strong> Christian Campos</p>
+<h2 id="objetivo-1-identificar-pacientes-con-osteosarcopenia">Objetivo 1: Identificar pacientes con osteosarcopenia. </h2>
+<p><strong>Definición:</strong> pacientes con diagnóstico de sarcopenia junto con osteoporosis u osteopenia.</p>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li><em>Nivel de sarcopenia</em> distinto de <em>sin sarcopenia</em>.</li>
+<li><em>Clasificación de densidad mineral</em> igual a <em>osteopenia</em> u <em>osteoporosis</em>.</li>
+</ul>
+<p><strong>Resultados:</strong></p>
+<ul>
+<li>Pacientes con osteosarcopenia: <strong>26</strong></li>
+<li>Pacientes sin osteosarcopenia: <strong>27</strong></li>
+</ul>
+<h3 id="visualización">Visualización. </h3>
+<h4 id="1-conteo-de-pacientes">1. Conteo de pacientes. </h4>
+<p><img src="outputs/osteosarcopenia_pacientes.png" alt="Barplot conteo"></p>
+<p><strong>Interpretación:</strong><br>
+Se observa que 26 de los 53 pacientes presentan tanto sarcopenia como osteopenia u osteoporosis, lo que representa el 49% de la muestra. Este hallazgo sugiere que la coexistencia de ambas condiciones es común en la población evaluada, y puede justificar su análisis conjunto.</p>
+<h4 id="2-distribución-por-edad">2. Distribución por edad. </h4>
+<p><img src="outputs/osteosarcopenia_edad.png" alt="Barplot conteo"></p>
+<p><strong>Interpretación:</strong><br>
+La mediana de edad es mayor en el grupo con osteosarcopenia (~68 años) en comparación con quienes no la presentan (~64 años). Aunque hay superposición, los valores centrales y extremos sugieren una posible asociación entre mayor edad y presencia de osteosarcopenia.</p>
+<h4 id="3-osteosarcopenia-según-nivel-de-sarcopenia">3. Osteosarcopenia según nivel de sarcopenia. </h4>
+<p><img src="outputs/osteosarcopenia_nivel.png" alt="Barplot conteo"></p>
+<p><strong>Interpretación:</strong><br>
+Los datos muestran que la mayoría de los pacientes con sarcopenia moderada presentan también osteosarcopenia. En contraste, los pacientes sin sarcopenia no tienen casos registrados de osteosarcopenia, lo cual apoya la definición lógica de esta variable derivada.</p>
+<h4 id="4-cruce-con-nivel-de-sarcopenia">4. Cruce con nivel de sarcopenia. </h4>
+<p><img src="outputs/osteosarcopenia_nivel_vs_dmo.png" alt="Barplot conteo"></p>
+<p><strong>Interpretación:</strong><br>
+El cruce de variables indica que los pacientes con sarcopenia moderada son más frecuentes entre quienes tienen osteopenia. También se observan combinaciones de sarcopenia severa con osteoporosis. Estos patrones respaldan la consistencia interna del diagnóstico combinado (osteosarcopenia) y pueden servir como base para análisis posteriores.</p>
+<h4 id="conclusión-de-objetivo-1">Conclusión de objetivo 1: </h4>
+<p>A partir del cruce entre los niveles de sarcopenia y la clasificación de densidad mineral ósea, se identificaron 26 pacientes con criterios compatibles con osteosarcopenia. Esta condición afecta prácticamente la mitad de la muestra analizada.</p>
+<p>Los patrones observados en las visualizaciones sugieren que la osteosarcopenia es más frecuente a mayor edad y con niveles más avanzados de sarcopenia. Además, la consistencia entre las variables usadas refuerza la validez del criterio adoptado para identificarla.</p>
+<hr>
+<h2 id="objetivo-2-clasificación-de-pacientes-con-osteosarcopenia-osteoporosis-u-osteopenia">Objetivo 2: Clasificación de pacientes con osteosarcopenia, osteoporosis u osteopenia. </h2>
+<p><strong>Definición:</strong> Este objetivo busca clasificar a los pacientes según las tres condiciones clínicas identificadas en el estudio:</p>
+<ul>
+<li>Osteosarcopenia.</li>
+<li>Osteopenia.</li>
+<li>Osteoporosis.</li>
+</ul>
+<blockquote>
+<p>Las condiciones no son excluyentes. Un paciente puede tener más de una simultáneamente.</p>
+</blockquote>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li><em>Clasificación de densidad mineral ósea</em></li>
+<li><em>Nivel de sarcopenia</em></li>
+</ul>
+<p><strong>Resultados:</strong></p>
+<ul>
+<li>Osteopenia: <strong>35 pacientes</strong>.</li>
+<li>Osteosarcopenia: <strong>26 pacientes</strong>.</li>
+<li>Osteoporosis: <strong>18 pacientes</strong>.</li>
+</ul>
+<h3 id="visualización-1">Visualización </h3>
+<h4 id="conteo-de-pacientes-por-condición-clínica">Conteo de pacientes por condición clínica. </h4>
+<p><img src="outputs/objetivo2_condiciones_clinicas.png" alt="Barplot conteo"></p>
+<p><strong>Interpreteación:</strong><br>
+Los datos muestran que la osteopenia es la condición más prevalente en la muestra, presente en 66% de los pacientes. La osteosarcopenia afecta aproximadamente a la mitad de los pacientes, mientras que la osteoporosis representa el 34%.</p>
+<p>Dado que las condiciones no son excluyentes, es posible que existan intersecciones entre estos grupos, por lo que este análisis permite entender la magnitud individual de cada condición, pero no su combinación exacta.</p>
+<h4 id="conclusión-del-objetivo-2">Conclusión del Objetivo 2: </h4>
+<p>Este análisis permitió obtener un conteo individual de los pacientes que presentan osteopenia, osteoporosis y osteosarcopenia. La osteopenia fue la condición más frecuente, seguida de la osteosarcopenia. Estos resultados no reflejan exclusividad entre categorías, pero permiten tener un panorama inicial sobre la prevalencia de cada condición en la muestra.</p>
+<hr>
+<h2 id="objetivo-3-dar-rehabilitación-a-los-pacientes-de-acorde-a-sus-necesidades">Objetivo 3: Dar rehabilitación a los pacientes, de acorde a sus necesidades. </h2>
+<p><strong>Definición:</strong> Este objetivo está orientado a una acción clínica. Desde el análisis de datos no es posible prescribir ni sugerir tratamientos, pero sí identificar patrones funcionales que orienten a posibles decisiones.</p>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li><em>Clasificación de estado físico</em>: nivel de rendimiento físico (bajo, intermedio, alto).</li>
+<li><em>Osteosarcopenia</em>: indicador si el paciente presenta sarcopenia + "alteración osea".</li>
+</ul>
+<p><strong>Criterio de análisis:</strong><br>
+Se evaluó la distribución del estado físico en pacientes con y sin osteosarcopenia, con el objetivo de detectar posibles perfiles con mayor necesidad de intervención funcional.</p>
+<blockquote>
+<p>Se utiliza el término "criterio de análisis" para señalar decisiones técnicas tomadas desde los datos.</p>
+</blockquote>
+<h3 id="visualización-2">Visualización. </h3>
+<h4 id="estado-físico-según-presencia-de-osteosarcopenia">Estado físico según presencia de osteosarcopenia. </h4>
+<p><img src="outputs/objetivo3_estado_vs_osteosarcopenia.png" alt="estado vs osteosarcopenia"></p>
+<p><strong>Interpretación:</strong><br>
+El gráfico muestra que los pacientes con estado físico bajo tienen una mayor proporción de casos con osteosarcopenia. En cambio aquellos con estado físico alto presentan predominantemente perfiles sin osteosarcopenia.</p>
+<p>Este patrón sugiere que el nivel de rendimiento físico puede estar asociado con la presencia de esta condición combinada.</p>
+<h4 id="conclusión-objetivo-3">Conclusión Objetivo 3: </h4>
+<p>A partir de la variable <em>Clasificacion de estado físico</em>, se identificó que los pacientes con osteosarcopenia presentan con mayor frecuencia una capacidad funcional reducida. Este hallazgo puede ser útil para priorizar intervenciones de rehabilitación en función de la clasificación funcional del paciente.</p>
+<hr>
+<h2 id="objetivo-4-evaluar-la-necesidad-de-tratamiento-nutriconal">Objetivo 4: Evaluar la necesidad de tratamiento nutriconal. </h2>
+<p><strong>Definición:</strong> Este objetivo busca identificar si existen patrones en el estado nutricional que puedan orientar hacia una intervención alimentaria, especialmente en pacientes con osteosarcopenia.</p>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li>Clasificación IMC: adecuada, sobrepeso, obesidad 1, 2 y 3.</li>
+<li>Porcentaje de grasa corporal.</li>
+<li>Osteosarcopenia: presencia de sarcopenia + alteración ósea.</li>
+</ul>
+<p><strong>Criterio de análisis:</strong><br>
+Se examinaron las distribuciones de IMC y del porcentaje de grasa corporral en pacientes con y sin osteosarcopenia, con el fin de detectar perfiles de riesgo o indicios que sugieran la necesidad de intervención nutricional.</p>
+<blockquote>
+<p>Se utiliza el término "criterio de análisis" para señalar decisiones técnicas tomadas desde los datos.</p>
+</blockquote>
+<h3 id="visualización-3">Visualización. </h3>
+<h4 id="1-clasificación-imc-según-presencia-de-osteosarcopenia">1. Clasificación IMC según presencia de osteosarcopenia. </h4>
+<p><img src="outputs/objetivo4_imc_vs_osteosarco.png" alt="imv vs osteosarcopenia"></p>
+<p><strong>Interpretación:</strong><br>
+Se observa una mayor proporción de pacientes con osteosarcopenia en las categorías de obesidad 2 y obesidad 3, mientras que el grupo sin osteosarcopenia predomina en el sobrepeso. Esto podría sugerir una asociación entre niveles más elvados de IMC y mayor prevalencia de osteosarcopenia.</p>
+<h4 id="2-distribución-del--de-grasa-corporal">2. Distribución del % de grasa corporal. </h4>
+<p><img src="outputs/objetivo4_grasa_vs_osteosarco.png" alt="imv vs osteosarcopenia"></p>
+<p><strong>Interpretación:</strong><br>
+El gráfico muestra que los pacientes con osteosarcopenia presentan un procentaje de grasa corporal más alto que aquellos sin esta condición. La mediana se encuentra desplazada hacia valores mayores, lo cual indica que al menos la mitad de estos pacientes tienen un porcentaje de grasa elevado. Además el rango intercuartílico (la distancia entre el primer y tercer cuartil) también es mayor, lo que sugiere más variabilidad y que un segmento aplio del grupo presenta niveles altos de adiposidad. Los valores atípicos o extremos refuerzan esta dispersión.</p>
+<h4 id="conclusión-objetivo-4">Conclusión Objetivo 4: </h4>
+<p>A través del análisis del IMC y del porcentaje de grasa corporal, se observan diferencias entre los pacientes con y sin osteosarcopenia. Los datos muestran una mayor concentración de casos con osteosarcopenia en las categorías más altas de IMC, así como una mayor mediana de grasa corporal en ese grupo Estos hallazgos no establecen causalidad, pero aportan indicios de una posible relación entre composición corporal y presencia de osteosarcopenia.</p>
+<hr>
+<h2 id="objetivo-5-comparar-los-diversos-métodos-de-diagnóstico-de-sarcopenia">Objetivo 5: Comparar los diversos métodos de diagnóstico de sarcopenia. </h2>
+<p><strong>Definición:</strong> Este objetivo busca observar cómo se comportan diferentes métodos diagnósticos de sarcopenia en la muestra. No se busca vaidad los métodos clínicamente, sino detectar consistencias, patrones o discrepancias entre ellos.</p>
+<p><strong>Variables utilizadas:</strong><br>
+<strong>Categóricas:</strong></p>
+<ul>
+<li><em>Resultado de la escala SARC-F.</em></li>
+<li><em>Resultado IMME.</em></li>
+<li><em>Resultado de la fuerza de prensión.</em></li>
+<li><em>Resultado de la velocidad de marcha.</em></li>
+</ul>
+<p><strong>Numéricas:</strong></p>
+<ul>
+<li><em>Circunferencia de la pantorilla.</em></li>
+<li><em>Fuerza de prensión.</em></li>
+<li><em>Velocidad de la marcha.</em></li>
+</ul>
+<h3 id="visualización-4">Visualización. </h3>
+<h4 id="1-escala-sarc-f">1. Escala SARC-F. </h4>
+<p><img src="outputs/objetivo5_sarc_f_resultado.png" alt="sarc-f"></p>
+<p><strong>Interpretación:</strong><br>
+35 pacientes presentan baja probabilidad de sarcopenía según SARC-F, mientras que 18 tienen alta probabilidad. Este instrimento, basado en autoevaluación funcional, identifica una proporción menor de posibles casos respecto a otros métodos.</p>
+<h4 id="2-circunferencia-de-miembro-torácico">2. Circunferencia de miembro torácico. </h4>
+<p><img src="outputs/objetivo5_imme_resultado.png" alt="imme"></p>
+<p><strong>Interpretación:</strong><br>
+La gran mayoría (44 pacientes) fue clasificacda como "normal", mientras que 8 fueron detectados con sarcopenia grado 1 y sólo 1 con grado 2. Esto podría indicar que éste criterio es más convervador o que la muestra tiene características que lo afectan.</p>
+<h4 id="3-fuerza-de-prensión">3. Fuerza de prensión. </h4>
+<p><img src="outputs/objetivo5_resultado_de_fp.png" alt="resultado de fp"></p>
+<p><strong>Interpretación:</strong><br>
+Hay distribución cercana entre pacientes con resultado <em>normal</em> (30) y aquellos con resultado <em>sarcopenia</em> (23). Esto indica que la fuerza de prensión muestra un equilibrio en la detección dentro de esta muestra.</p>
+<h4 id="4-velocidad">4. Velocidad. </h4>
+<p><img src="outputs/objetivo5_resultado_de_velocidad.png" alt="resultado_de_velocidad"></p>
+<p><strong>Interpretación:</strong><br>
+Similar al patrón anterior, 31 pacientes fueron clasificados como <em>normal</em>, mientras que <em>22</em> mostraron indicadores compatibles con sarcopenia. Esto sugiere que la velocidad también ofrece una distribución equilibrada como criterio.</p>
+<h4 id="5-circunferencia-de-pantorrilla">5. Circunferencia de pantorrilla. </h4>
+<p><img src="outputs/objetivo5_circunferencia_de_la_pantorrilla.png" alt="circunferencia de pantorrilla"></p>
+<p><strong>Interpretación:</strong><br>
+La distribucióin de la circunferencia de pantorrilla es similar entre grupos. No se observa una clara separación entre quienes tienen y no osteosarcopenia. La mediana es apenas menor en el grupo con osteosarcopenia, pero con una mayor dispersión.</p>
+<h4 id="6-fuerza-de-prenssión-kg">6. Fuerza de prenssión (kg). </h4>
+<p><img src="outputs/objetivo5_fuerza_de_prension.png" alt="fuerza de prensión"></p>
+<p><strong>Interpretación:</strong><br>
+Los pacientes con osteosarcopenia tienden a presentar una fuerza de prensión más baja. Las medianas entre ambos grupos están separadas, y el grupo con osteosarcopenia muestra también menor rango intercuartílico, indicando menor variabilidad.</p>
+<h4 id="7-velocidad-de-marcha-ms">7. Velocidad de marcha (m/s). </h4>
+<p><img src="outputs/objetivo5_velocidad_de_la_marcha.png" alt="velocidad de la marcha"></p>
+<p><strong>Interpretación:</strong><br>
+Los pacientes con osteosarcopenia tienden a tener velocidades de marcha más bajas. La mediana y el rango intercuartílico del grupo se sitúan en valores inferiores, lo que sugiere una menor capacidad funcional en términos de desplazamiento. Esto se refuerza por la presencia de varios valores atípicos bajos en este grupo.</p>
+<h4 id="conclusión-objetivo-5">Conclusión Objetivo 5: </h4>
+<p>El análisis comparativo de los métodos disponibles para detectar sarcopenia mostró resultados razonablemente consistentes. A través de los métodos categóricos (SARC-F, IMME, fuerza de prensión, velocidad de la marcha), se identificó un porcentaje importante de pacientes con algún grado de deterioro funcional, mientras que los métodos numéricos mostraros diferencias claras entre quienes presentan osteosarcopenia y quienes no.</p>
+<p>En particular, los pacientes con osteosarcopenia tienden a tener menor fuerza de prensión, menor velocidad de marcha y una ligera tendenceia a menor circunferencia de pantorilla. Estas observaciones sugieren que los métodos analizados responden en la dirección esperada segun el estado clínico de los pacientes.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

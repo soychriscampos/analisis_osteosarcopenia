@@ -1,0 +1,9 @@
+# Archivos sensibles
+data/raw/*
+
+# Archivos temporales
+*.pyc
+__pycache__/
+
+# Archivos ocultos o del sistema
+.DS_Store

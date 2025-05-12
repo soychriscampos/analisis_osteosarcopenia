@@ -354,7 +354,7 @@ Este objetivo no se abordó en el presente análisis, dado que el conjunto de da
 **Variables utilizadas:**
 - _Puntaje de katz_: desempeño en actividades básicas de la vida diaria (puntaje de 0 a 6).
 - _Resultado de lawton_: desempeño en actividades instrumentales de la vida diaria (puntaje de 0 a 8).
-- _Osteosarcopenia_: precencia o ausencia.
+- _Osteosarcopenia_: presencia o ausencia.
 
 **Limitaciones del análisis:**
 El análisis original incluía también Frail y SarQol; sin embargo, estas no se encuentran disponibles en el conjunto de datos actual. Por lo tanto, el análisis se limitó a las escalas Katz y Lawton.

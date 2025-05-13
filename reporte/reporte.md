@@ -492,7 +492,7 @@ Se compararon las probabilidades continuas de fractura (por fragilidad y de cade
 Aunque la mediana es ligeramente más alta en el grupo con osteosarcopenia, la diferencia es mínima y existe un solapamiento considerable entre ambos grupos. No se observa una separación clara en la probabilidad de fractura por fragilidad.
 
 #### 2. FRAX: Probabilidad de fractura de cadera según osteosarcopenia.
-![cadera vs osteosarcopenia](/..outputs/objetivo14_frax_cadera_vs_osteosarcopenia.png)
+![cadera vs osteosarcopenia](../outputs/objetivo14_frax_cadera_vs_osteosarcopenia.png)
 
 **Interpretación:**
 En el grupo con osteosarcopenia se observa una mediana elevada en la probabilidad de fractura de cadera, junto con un rango de valores más extendido hacia el riesgo alto. Aunque hay valores extremos en ambos grupos, esta diferencia sugiere una tendencia leve hacia mayor riesgo.

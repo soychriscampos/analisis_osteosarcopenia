@@ -1,5 +1,5 @@
 # Informe Exploratorio: Osteosarcopenia - Análisis a 53 Pacientes de Escuinapa, Sinaloa, México.
-**Responsable del Estudio:** Dr. Arturo Rizo Topete.  
+**Responsable del estudio:** Dr. Arturo Rizo Topete.  
 **Análisis:** Christian Campos Regalado.
 
 ---
@@ -46,25 +46,25 @@ El análisis se centra en identificar patrones, distribuciones y posibles relaci
 ### Visualización.
 
 #### 1. Conteo de pacientes.
-![Barplot conteo](/outputs/osteosarcopenia_pacientes.png)
+![Barplot conteo](../outputs/osteosarcopenia_pacientes.png)
 
 **Interpretación:**
 Se observa que 26 de los 53 pacientes presentan tanto sarcopenia como osteopenia u osteoporosis, lo que representa el 49% de la muestra. Este hallazgo sugiere que la coexistencia de ambas condiciones es común en la población evaluada, y puede justificar su análisis conjunto.
 
 #### 2. Distribución por edad.
-![Barplot conteo](/outputs/osteosarcopenia_edad.png)
+![Barplot conteo](../outputs/osteosarcopenia_edad.png)
 
 **Interpretación:**
 La mediana de edad es mayor en el grupo con osteosarcopenia (~68 años) en comparación con quienes no la presentan (~64 años). Aunque hay superposición, los valores centrales y extremos sugieren una posible asociación entre mayor edad y presencia de osteosarcopenia.
 
 #### 3. Osteosarcopenia según nivel de sarcopenia.
-![Barplot conteo](/outputs/osteosarcopenia_nivel.png)
+![Barplot conteo](../outputs/osteosarcopenia_nivel.png)
 
 **Interpretación:**
 Los datos muestran que la mayoría de los pacientes con sarcopenia moderada presentan también osteosarcopenia. En contraste, los pacientes sin sarcopenia no tienen casos registrados de osteosarcopenia, lo cual apoya la definición lógica de esta variable derivada.
 
 #### 4. Cruce con nivel de sarcopenia.
-![Barplot conteo](/outputs/osteosarcopenia_nivel_vs_dmo.png)
+![Barplot conteo](../outputs/osteosarcopenia_nivel_vs_dmo.png)
 
 **Interpretación:**
 El cruce de variables indica que los pacientes con sarcopenia moderada son más frecuentes entre quienes tienen osteopenia. También se observan combinaciones de sarcopenia severa con osteoporosis. Estos patrones respaldan la consistencia interna del diagnóstico combinado (osteosarcopenia) y pueden servir como base para análisis posteriores.
@@ -96,7 +96,7 @@ Los patrones observados en las visualizaciones sugieren que la osteosarcopenia e
 
 ### Visualización
 #### Conteo de pacientes por condición clínica.
-![Barplot conteo](/outputs/objetivo2_condiciones_clinicas.png)
+![Barplot conteo](../outputs/objetivo2_condiciones_clinicas.png)
 
 **Interpretación:**
 Los datos muestran que la osteopenia es la condición más prevalente en la muestra, presente en 66% de los pacientes. La osteosarcopenia afecta aproximadamente a la mitad de los pacientes, mientras que la osteoporosis representa el 34%.  
@@ -122,7 +122,7 @@ Se evaluó la distribución del estado físico en pacientes con y sin osteosarco
 ### Visualización.
 
 #### Estado físico según presencia de osteosarcopenia.
-![estado vs osteosarcopenia](/outputs/objetivo3_estado_vs_osteosarcopenia.png)
+![estado vs osteosarcopenia](../outputs/objetivo3_estado_vs_osteosarcopenia.png)
 
 **Interpretación:**
 El gráfico muestra que los pacientes con estado físico bajo tienen una mayor proporción de casos con osteosarcopenia. En cambio aquellos con estado físico alto presentan predominantemente perfiles sin osteosarcopenia.
@@ -151,14 +151,14 @@ Se examinaron las distribuciones de IMC y del porcentaje de grasa corporal en pa
 
 #### 1. Clasificación IMC según presencia de osteosarcopenia.
 
-![imv vs osteosarcopenia](/outputs/objetivo4_imc_vs_osteosarco.png)
+![imv vs osteosarcopenia](../outputs/objetivo4_imc_vs_osteosarco.png)
 
 **Interpretación:**
 Se observa una mayor proporción de pacientes con osteosarcopenia en las categorías de obesidad 2 y obesidad 3, mientras que el grupo sin osteosarcopenia predomina en el sobrepeso. Esto podría sugerir una asociación entre niveles más elevados de IMC y mayor prevalencia de osteosarcopenia.
 
 #### 2. Distribución del % de grasa corporal.
 
-![imv vs osteosarcopenia](/outputs/objetivo4_grasa_vs_osteosarco.png)
+![imv vs osteosarcopenia](../outputs/objetivo4_grasa_vs_osteosarco.png)
 
 **Interpretación:**
 El gráfico muestra que los pacientes con osteosarcopenia presentan un porcentaje de grasa corporal más alto que aquellos sin esta condición. La mediana se encuentra desplazada hacia valores mayores, lo cual indica que al menos la mitad de estos pacientes tienen un porcentaje de grasa elevado. Además el rango intercuartílico (la distancia entre el primer y tercer cuartil) también es mayor, lo que sugiere más variabilidad y que un segmento amplio del grupo presenta niveles altos de adiposidad. Los valores atípicos o extremos refuerzan esta dispersión.
@@ -190,51 +190,51 @@ Se dividieron los métodos en dos grupos: variables categóricas (clasificación
 ### Visualización.
 #### 1. Escala SARC-F.
 
-![sarc-f](/outputs/objetivo5_sarc_f_resultado.png)
+![sarc-f](../outputs/objetivo5_sarc_f_resultado.png)
 
 **Interpretación:**
 35 pacientes presentan baja probabilidad de sarcopenia según SARC-F, mientras que 18 tienen alta probabilidad. Este instrumento, basado en la percepción del propio desempeño físico, identifica una proporción menor de posibles casos respecto a otros métodos.
 
 #### 2. Circunferencia de miembro torácico.
-![imme](/outputs/objetivo5_imme_resultado.png)
+![imme](../outputs/objetivo5_imme_resultado.png)
 
 **Interpretación:**
 La gran mayoría (44 pacientes) fue clasificada como "normal", mientras que 8 fueron detectados con sarcopenia grado 1 y sólo 1 con grado 2. Esto podría indicar que éste criterio es más convervador o que la muestra tiene características que lo afectan.
 
 #### 3. Fuerza de prensión.
-![resultado de fp](/outputs/objetivo5_resultado_de_fp.png)
+![resultado de fp](../outputs/objetivo5_resultado_de_fp.png)
 
 **Interpretación:**
 Hay distribución cercana entre pacientes con resultado _normal_ (30) y aquellos con resultado _sarcopenia_ (23). Esto indica que la fuerza de prensión muestra un equilibrio en la detección dentro de esta muestra.
 
 #### 4. Velocidad.
-![resultado_de_velocidad](/outputs/objetivo5_resultado_de_velocidad.png)
+![resultado_de_velocidad](../outputs/objetivo5_resultado_de_velocidad.png)
 
 **Interpretación:**
 Similar al patrón anterior, 31 pacientes fueron clasificados como _normal_, mientras que _22_ mostraron indicadores compatibles con sarcopenia. Esto sugiere que la velocidad también es un criterio que tiende a dividir la muestra de forma balanceada.
 
 #### 5. Circunferencia de pantorrilla.
-![circunferencia de pantorrilla](/outputs/objetivo5_circunferencia_de_la_pantorrilla.png)
+![circunferencia de pantorrilla](../outputs/objetivo5_circunferencia_de_la_pantorrilla.png)
 
 **Interpretación:**
 La distribución de la circunferencia de pantorrilla es similar entre grupos. No se observa una separación marcada entre los grupos. La mediana es ligeramente menor en quienes presentan osteosarcopenia, aunque con mayor dispersión, lo que sugiere que esta medida no diferencia de forma clara entre ambos perfiles.
 
 #### 6. Fuerza de prensión (kg).
-![fuerza de prensión](/outputs/objetivo5_fuerza_de_prension.png)
+![fuerza de prensión](../outputs/objetivo5_fuerza_de_prension.png)
 
 **Interpretación:**
 Los pacientes con osteosarcopenia tienden a presentar una fuerza de prensión más baja. Las medianas entre ambos grupos están separadas, y el grupo con osteosarcopenia muestra también menor rango intercuartílico, indicando menor variabilidad.
 
 
 #### 7. Velocidad de marcha (m/s).
-![velocidad de la marcha](/outputs/objetivo5_velocidad_de_la_marcha.png)
+![velocidad de la marcha](../outputs/objetivo5_velocidad_de_la_marcha.png)
 
 **Interpretación:**
 Los pacientes con osteosarcopenia tienden a tener velocidades de marcha más bajas. La mediana y el rango intercuartílico del grupo se sitúan en valores inferiores, lo que sugiere una menor capacidad para desplazarse con rapidez en este grupo. Esto se refuerza por la presencia de varios valores atípicos bajos en este grupo.
 
 
 #### 8. Correlación entre medidas numéricas.
-![correlación](/outputs/objetivo5_corr.png)
+![correlación](../outputs/objetivo5_corr.png)
 
 **Interpretación:**
 Se exploró la relación entre variables numéricas involucradas en los diferentes métodos de diagnósticos de sarcopenia. En la matriz de correlación se observaron los siguientes hallazgos:
@@ -271,14 +271,14 @@ Posteriormente, se analizó la distribución de estos niveles y su relación con
 ### Visualización
 #### 1. Distribución de pacientes según niveles de funcionalidad.
 
-![distribución sppb](/outputs/objetivo6_sppb_categorias.png)
+![distribución sppb](../outputs/objetivo6_sppb_categorias.png)
 
 **Interpretación:**
 Se observa que la mayoría de los pacientes se ubican en los niveles mínima o leve de limitación funcional, mientras que una menor proporción presenta limitaciones moderadas o graves. Esto indica que, dentro de la muestra, hay una prevalencia mayor de desempeño físico conservado, aunque existe una fracción relevante con limitaciones más marcadas.
 
 
 #### 2. Relación entre funcionalidad (SPPB) y osteosarcopenia.
-![sppb vs osteosarcopenia](/outputs/objetivo6_sppb_vs_osteosarcopenia.png)
+![sppb vs osteosarcopenia](../outputs/objetivo6_sppb_vs_osteosarcopenia.png)
 
 **Interpretación**
 El gráfico muestra que la proporción de pacientes con osteosarcopenia aumenta a medida que disminuye el nivel de funcionalidad. En la categoría _mínima_, la mayoría no presenta osteosarcopenia, mientras que en las categorías _moderada_ y _grave_ predominan quienes sí la presentan. Este patrón sugiere una posible asociación entre menor desempeño físico y presencia de osteosarcopenia.
@@ -312,12 +312,12 @@ Se compararon los valores de masa muscular total entre pacientes con y sin sarco
 
 ### Visualización.
 
-![masa muscular según sacropenia](/outputs/objetivo7_masa_vs_sarcopenia.png)
+![masa muscular según sacropenia](../outputs/objetivo7_masa_vs_sarcopenia.png)
 
 **Interpretación:**
 Aunque hay superposición entre ambos grupos, se observa que los pacientes con sarcopenia tienden a tener menor masa muscular total. Las medianas son ligeramente más bajas y el rango inferior muestra mayor extensión hacia valores bajos.
 
-![masa muscular según nivel de sarcopenia](/outputs/objetivo7_masa_vs_nivel.png)
+![masa muscular según nivel de sarcopenia](../outputs/objetivo7_masa_vs_nivel.png)
 
 **Interpretación:**
 Aunque se esperaría una disminución progresiva en la masa muscular total conforme aumenta la severidad de la sarcopenia, los datos muestran una desviación en este patrón. En particular, el grupo con sarcopenia leve presenta la mediana más alta de masa muscular, incluso por encima del grupo de sin sarcopenia. A partir de ahí, los valores disminuyen en los grupos moderada y severa, siendo esta única categoría con una caída clara y sostenida.
@@ -365,7 +365,7 @@ Se compararon los puntajes de las escalas Katz y Lawton entre los pacientes con 
 ### Visualización.
 
 #### 1. Puntaje de Katz según presencia de osteosarcopenia
-![katz vs osteosarcopenia](/outputs/objetivo11_katz_vs_osteosarcopenia.png)
+![katz vs osteosarcopenia](../outputs/objetivo11_katz_vs_osteosarcopenia.png)
 
 **Interpretación:**
 La mayoría de los pacientes obtuvieron el puntaje máximo (6) en esta escala, lo que refleja un alto nivel de funcionalidad básica en ambos grupos. Esta falta de variabilidad limita la capacidad de la escala para detectar diferencias entre quienes presentan y no osteosarcopenia. En términos técnicos, se observa un _efecto techo_, lo cual indica que los datos están concentrados en el valor superior.
@@ -378,7 +378,7 @@ La mayoría de los pacientes obtuvieron el puntaje máximo (6) en esta escala, l
 
 
 #### 2. Puntaje de Lawton según presencia de osteosarcopenia.
-![lawton vs osteosarcopenia](/outputs/objetivo11_lawton_vs_osteosarcopenia.png)
+![lawton vs osteosarcopenia](../outputs/objetivo11_lawton_vs_osteosarcopenia.png)
 
 **Interpretación:**
 A diferencia de la escala de Katz, el puntaje de Lawton presenta mayor dispersión, especialmente en el grupo con osteosarcopenia. Mientras que el grupo sin esta condición se concentra casi exclusivamente en el puntaje máximo (8), el grupo con osteosarcopenia se distribuye entre los valores 4 a 8. Este diferencia sugiere que Lawton podría ser más sensible para captar variaciones funcionales en pacientes con osteosarcopenia.
@@ -414,14 +414,14 @@ Se ordenaron las categorías de ejercicio y se comparó su distribución entre l
 
 #### 1. Distribución del ejercicio según presencia de sarcopenia.
 
-![ejercicio y sarcopenia](/outputs/objetivo12_ejercicio_vs_sarcopenia.png)
+![ejercicio y sarcopenia](../outputs/objetivo12_ejercicio_vs_sarcopenia.png)
 
 **Interpretación:**
 La mayoría de los pacientes con sarcopenia se centran en la categoría _no_, lo que sugiere una mayor prevalencia de esta condición entre quienes reportaron no haber realizado ejercicio. En contraste, los pacientes sin sarcopenia muestran una distribución más amplia, con mayor representación en categorías de mayor duración de ejercicio.
 
 #### 2. Distribución del ejercicio según presencia de osteoporosis.
 
-![ejercicio y osteoporosis](/outputs/objetivo12_ejercicio_vs_osteoporosis.png)
+![ejercicio y osteoporosis](../outputs/objetivo12_ejercicio_vs_osteoporosis.png)
 
 **Interpretación:**
 Aunque el grupo con osteoporosis también se concentra en la categoría _no_, existe cierta representación en las demás categorías. Los pacientes sin osteoporosis muestran una distribución más uniforme, con presencia moderada en todos los niveles de ejercicio. La diferencia no es tan marcada como en el caso de sarcopenia, pero se percibe una tendencia similar.
@@ -448,19 +448,19 @@ Se unificaron las columnas medicamento 1 y medicamento 2 en una lista por pacien
 ### Visualización.
 
 #### 1. Consumo de antidiabéticos según osteosarcopenia.
-![antidiabéticos vs osteosarcopenia](/outputs/objetivo13_antidiabeticos_vs_osteosarcopenia.png)
+![antidiabéticos vs osteosarcopenia](../outputs/objetivo13_antidiabeticos_vs_osteosarcopenia.png)
 
 **Interpretación:**
 En el grupo con osteosarcopenia se observa una mayor proporción de pacientes que utilizan antidiabéticos en comparación con el grupo sin la condición. 
 
 #### 2. Consumo de antihipertensivos según osteosarcopenia.
-![antihipertensivos vs osteosarcopenia](/outputs/objetivo13_antihipertensivos_vs_osteosarcopenia.png)
+![antihipertensivos vs osteosarcopenia](../outputs/objetivo13_antihipertensivos_vs_osteosarcopenia.png)
 
 **Interpretación:**
 El uso de antihipertensivos está presente en ambos grupos de manera relativamente pareja. No se observa una diferencia clara en su frecuencia que permita suponer una asociación directa con la presencia de osteosarcopenia.
 
 #### 3. Consumo de hipnóticos o ansiolíticos según osteosarcopenia.
-![ansiolíticos vs osteosarcopenia](/outputs/objetivo13_ansioliticos_vs_osteosarcopenia.png)
+![ansiolíticos vs osteosarcopenia](../outputs/objetivo13_ansioliticos_vs_osteosarcopenia.png)
 
 **Interpretación:**
 El consumo de hipnóticos o ansiolíticos es bajo en general, pero su frecuencia relativa es ligeramente mayo en el grupo con osteosarcopenia.
@@ -486,19 +486,19 @@ Se compararon las probabilidades continuas de fractura (por fragilidad y de cade
 ### Visualización.
 
 #### 1. FRAX: Probabilidad de fractura por fragilidad según osteosarcopenia.
-![fragilidad vs osteosarcopenia](/outputs/objetivo14_frax_fragilidad_vs_osteosarcopenia.png)
+![fragilidad vs osteosarcopenia](../outputs/objetivo14_frax_fragilidad_vs_osteosarcopenia.png)
 
 **Interpretación:**
 Aunque la mediana es ligeramente más alta en el grupo con osteosarcopenia, la diferencia es mínima y existe un solapamiento considerable entre ambos grupos. No se observa una separación clara en la probabilidad de fractura por fragilidad.
 
 #### 2. FRAX: Probabilidad de fractura de cadera según osteosarcopenia.
-![cadera vs osteosarcopenia](/outputs/objetivo14_frax_cadera_vs_osteosarcopenia.png)
+![cadera vs osteosarcopenia](/..outputs/objetivo14_frax_cadera_vs_osteosarcopenia.png)
 
 **Interpretación:**
 En el grupo con osteosarcopenia se observa una mediana elevada en la probabilidad de fractura de cadera, junto con un rango de valores más extendido hacia el riesgo alto. Aunque hay valores extremos en ambos grupos, esta diferencia sugiere una tendencia leve hacia mayor riesgo.
 
 #### 3. Clasificación de riesgo de FRAX según osteosarcopenia.
-![clasificacion de riesgo](/outputs/objetivo14_frax_clasificacion_vs_osteosarcopenia.png)
+![clasificacion de riesgo](../outputs/objetivo14_frax_clasificacion_vs_osteosarcopenia.png)
 
 **Interpretación:**
 La mayoría de los pacientes con y sin osteosarcopenia se encuentran en el nivel moderado de riesgo. Se observa una mayor presencia relativa del grupo con osteosarcopenia en la categoría alta, mientras que el grupo sin la condición muestra mayor representación en la categoría muy alta. No se aprecia una tendencia clara que relacione directamente la presencia de osteosarcopenia con una mayor estratificación de riesgo de FRAX.

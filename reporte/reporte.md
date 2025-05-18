@@ -1,5 +1,5 @@
 # Informe Exploratorio: Osteosarcopenia - Análisis a 53 Pacientes de Escuinapa, Sinaloa, México.
-**Responsable del estudio:** Dr. Arturo Rizo Topete.  
+**Responsable del estudio:** Dr. Arturo José Rizo Topete.  
 **Análisis:** Christian Campos Regalado.
 
 ---

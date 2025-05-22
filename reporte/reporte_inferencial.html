@@ -1,0 +1,558 @@
+<!DOCTYPE html><html><head>
+      <title>reporte_inferencial</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/tutsito/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="informe-de-inferencial-estadística-osteosarcopenia">Informe de Inferencial Estadística: Osteosarcopenia </h1>
+<p><strong>Responsable del estudio:</strong> Dr. Arturo José Rizo Topete.<br>
+<strong>Análisis estadístico:</strong> Christian Campos Regalado.</p>
+<hr>
+<h2 id="introducción">Introducción </h2>
+<p>Este documento complementa el análisis exploratorio previamente entregado, integrando pruebas de inferencia estadística sobre una muestra de 53 pacientes. El propósito es validar si los patrones observados entre variables clínicas, funcionales y antropométricas son estadísticamente significativos dentro de la muestra analizada.</p>
+<p>Cada apartado corresponde a un objetivo específico del estudio original y aplica técnicas inferenciales acordes al tipo de variable y nivel de medición.</p>
+<blockquote>
+<p><em>Nota: Las pruebas aquí utilizadas no buscan establecer causalidad clínica, sino únicamente identificar diferencias o asociaciones significativas desde el punto de vista estadístico.</em></p>
+</blockquote>
+<hr>
+<h2 id="objetivo-1-comparar-la-edad-entre-pacientes-con-y-sin-osteosarcopenia">Objetivo 1. Comparar la edad entre pacientes con y sin osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Evaluar si la edad media difiere significativamente entre pacientes con y sin osteosarcopenia, como se sugirió visualmente en el análisis exploratorio.</p>
+<h3 id="metodología">Metodología: </h3>
+<ul>
+<li>Prueba de normalidad (Shapiro-Wilk).</li>
+<li>Prueba de homogeneidad de varianzas (Levene).</li>
+<li>Prueba t de Student para muestras independientes.</li>
+<li>Prueba de respaldo: Mann-Whitney U.</li>
+</ul>
+<h3 id="resultados">Resultados </h3>
+<ul>
+<li>Edad media (osteosarcopenia): 67.9 años</li>
+<li>Edad media (sin osteosarcopenia): 65.0 años</li>
+<li>t-test: p = 0.119</li>
+<li>Mann-Whitney U: p = 0.101</li>
+</ul>
+<h3 id="conclusión">Conclusión: </h3>
+<p>No se encontraron diferencias estadísticamente significativas en la edad media entre pacientes con y sin osteosarcopenia. Aunque existe una ligera tendencia hacia mayor edad en el grupo con la condición, esta no alcanza significancia estadística (p &gt; 0.05).</p>
+<p>La superposición de valores y el tamaño limitado de la muestra podrían influir en la ausencia de significancia.</p>
+<hr>
+<h2 id="objetivo-3-asociación-entre-estado-físico-y-osteosarcopenia">Objetivo 3. Asociación entre estado físico y osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Determinar si existe una asociación estadísticamente significativa entre el nivel de estado físico de los pacientes (alto, intermedio, bajo) y la presencia de osteosarcopenia. En el análisis exploratorio se observó que los pacientes con peor estado físico tendían a presentar la condición.</p>
+<h3 id="metodología-1">Metodología: </h3>
+<ul>
+<li>Tabla de contingencia entre las variables <em>clasificación de estado físico</em> y <em>osteosarcopenia</em>.</li>
+<li>Prueba de independendia: Chi-cuadrado de Pearson.</li>
+<li>Se evaluó si la distribución del estado físico es independiente de la presencia de osteosarcopenia.</li>
+</ul>
+<h3 id="resultados-1">Resultados: </h3>
+<table>
+<thead>
+<tr>
+<th>Estado físico</th>
+<th>Sin osteosarcopenia</th>
+<th>Con osteosarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alto</td>
+<td>18</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Intermedio</td>
+<td>7</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Bajo</td>
+<td>2</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Estadístico chi-cuadrado: 18.73.</li>
+<li>p-valor: 0.0001.</li>
+<li>Grados de libertad: 2.</li>
+</ul>
+<h3 id="conclusión-1">Conclusión: </h3>
+<p>Se encontró una asociación estadísticamente significativa entre el nivel de estado físico y la presencia de osteosarcopenia (p &lt; 0.001).</p>
+<p>Los pacientes con osteosarcopenia presentaron una proporción notablemente mayor de casos con estado físico bajo, mientras que aquellos con estado físico alto fueron más frecuentes en el grupo sin la condición. Estos hallazgos respaldan el patrón observado en el análisis exploratorio y sugieren que la funcionalidad física podría estar relacionada con la presencia de osteosarcopenia dentro de esta muestra.</p>
+<hr>
+<h2 id="objetivo-4-evaluar-diferencias-en-imc-y-grasa-corporal-según-osteosarcopenia">Objetivo 4. Evaluar diferencias en IMC y grasa corporal según osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Evaluar si existen diferencias estadísticamente significativas en el porcentaje de grasa corporal y la clasificación del IMC entre pacientes con y sin osteosarcopenia. En el análisis exploratorio se observaron patrones que sugerían una mayor proporción de grasa y mayor clasificación de IMC en pacientes con la condición.</p>
+<h3 id="metodología-2">Metodología: </h3>
+<p>Se analizaron dos variables:</p>
+<ol>
+<li><strong>Porcentaje de grasa corporal:</strong>
+<ul>
+<li>Prueba de normalidad: Shapiro-Wilk.</li>
+<li>Comparación de medias: t de Student para muestras independientes.</li>
+<li>Prueba no paramétrica de respaldo: Mann-Whitney U.</li>
+</ul>
+</li>
+<li><strong>Clasificación del IMC:</strong>
+<ul>
+<li>Asociación mediante tabla de contingencia.</li>
+<li>Prueba de independencia: Chi-cuadrado de Pearson.</li>
+</ul>
+</li>
+</ol>
+<h3 id="resultados-2">Resultados: </h3>
+<p><strong>Porcentaje de grasa corporal:</strong></p>
+<ul>
+<li>Shapiro-Wilk (osteosarcopenia): p = 0.112.</li>
+<li>Shapiro-Wilk (sin osteosarcopenia): p = 0.224.</li>
+</ul>
+<p><em>Se cumplió el suspuesto de normalidad para ambos grupos.</em></p>
+<ul>
+<li>t-test: p = 0.119.</li>
+<li>Mann-Whitney U: p = 0.101.</li>
+</ul>
+<p><em>No se encontraron diferencias estadísticamente significatvias en el porcentaje de grasa corportal entre los grupos.</em></p>
+<p><strong>Clasificación del IMC</strong></p>
+<table>
+<thead>
+<tr>
+<th>Clasificación IMC</th>
+<th>Sin osteosarcopenia</th>
+<th>Con osteosarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adecuado</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Sobrepeso</td>
+<td>14</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Obesidad 1</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Obesidad 2</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Obesidad 3</td>
+<td>1</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chi-cuadrado: 3.92.</li>
+<li>p-valor: 0.417.</li>
+<li>Grados de libertad: 4.</li>
+</ul>
+<p><em>No se encontró asociación estadísticamente significativa entre la clasificación del IMC y la presencia de osteosarcopenia.</em></p>
+<h3 id="conclusión-2">Conclusión: </h3>
+<p>Aunque el análisis exploratorio mostró una tendencia visual hacia mayor porcentaje de grasa corporal y clasificaciones más altas de IMC en pacientes con osteosarcopenia, las pruebas inferenciales no encontraron diferencias ni asociaciones estadísticamente significativas (p &gt; 0.05).</p>
+<p>Estos resultados sugieren que, en esta muestra, la composición corporal medida mediante estas variables no se comporta como un diferenciador concluyente de osteosarcopenia desde el punto de vista estadístico.</p>
+<hr>
+<h2 id="objetivo-6-relación-entre-nivel-de-funcionalidad-física-sppb-y-osteosarcopenia">Objetivo 6. Relación entre nivel de funcionalidad física (SPPB) y osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Evaluar si existe una asociación estadísticamente significativa entre el nivel de funcionalidad física —clasificado mediante la prueba SPPB en cuatro categorías— y la presencia de osteosarcopenia. En el análisis exploratorio se observó que los niveles funcionales más bajos eran más frecuentes en pacientes con la condición.</p>
+<h3 id="metodología-3">Metodología: </h3>
+<ul>
+<li>Se utilizó la variable <em>sppb categoria</em> con cuatro niveles: mínima, leve, moderada, y grave.</li>
+<li>Se comparó con la variable <em>osteosarcopenia</em>.</li>
+<li>Se construyó una tabla de contingencia.</li>
+<li>Se aplicó una prueba de independencia chi-cuadrado de Pearson para evaluar si la distribución de los niveles funcionales difiere según la presencia de la condición.</li>
+</ul>
+<h3 id="resultados-3">Resultados: </h3>
+<table>
+<thead>
+<tr>
+<th>Nivel SPPB</th>
+<th>Sin osteosarcopenia</th>
+<th>Con osteosarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mínima</td>
+<td>18</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Leve</td>
+<td>6</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Moderada</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Grave</td>
+<td>1</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Estadístico chi-cuadrado: 18.42.</li>
+<li>p-valor: 0.0004.</li>
+<li>Grados de libertad: 3.</li>
+</ul>
+<h3 id="conclusión-3">Conclusión: </h3>
+<p>Se encontró una asocación estadísticamente significativa entre el nivel de funcionalidad física (SPPB) y la presencia de osteosarcopenia (p &lt; 0.001).</p>
+<p>Los pacientes con osteosarcopenia mostraron una mayor proporción de casos con funcionalidad reducida (niveles moderado y grave), mientras que aquellos sin la condición se concentraron en los niveles de funcionalidad mínima. Esto respalda el patrón observado en el análisis exploratorio y sugiere que el desempeño físico modedido por la prueba SPPB está relacionado con la condición dentro de esta muestra clínica.</p>
+<hr>
+<h2 id="objetivo-7-comparación-de-masa-muscular-según-nivel-de-sarcopenia">Objetivo 7. Comparación de masa muscular según nivel de sarcopenia. </h2>
+<p><strong>Propósito:</strong> Evaluar si existen diferencias estadísticamente significativas en la masa muscular absoluta entre los diferentes niveles de sarcopenia (sin, leve, moderada, severa). En el análisis exploratorio se observaron diferencias en las medianas entre grupos, aunque no se identificó un patrón progresivo claro.</p>
+<h3 id="metodología-4">Metodología: </h3>
+<ul>
+<li>Variable dependiente: <em>masa muscular absoluta</em> (kg).</li>
+<li>Variable independiente: <em>nivel de sarcopenia</em> (cuatro grupos).</li>
+<li>Se aplicó la prueba de normalidad Shapiro-Wilk por grupo.</li>
+<li>Al no cumplirse el supuesto de normalidad en todos los grupos, se utilizó la prueba no paramétrica de Kruskal-Wallis para comparar distribuciones entre los grupos independientes.</li>
+</ul>
+<h3 id="resultados-4">Resultados. </h3>
+<p><strong>Prueba de normalidad (Shapiro-Wilk por grupo):</strong></p>
+<ul>
+<li>Sin sarcopenia: p = 0.001 no normal.</li>
+<li>Leve: p = 0.541 normal.<br>
+Moderada: p = 0.473 normal.<br>
+Severa: p = 0.786 normal.</li>
+</ul>
+<p><em>Al menos uno de los grupos no presenta distribución normal, por lo tanto se aplicó una prueba no paramétrica.</em></p>
+<p><strong>Prueba Kruskal-Wallis:</strong></p>
+<ul>
+<li>Estadístico H: 11.07.</li>
+<li>p-valor: 0.011.</li>
+</ul>
+<p><em>El resultado indica que existen diferencias estadísticamente significativas en la masa muscular entre al menos dos de los niveles de sarcopenia (p &lt; 0.05).</em></p>
+<h3 id="conclusión-4">Conclusión: </h3>
+<p>Se encontraron diferencias estadísticamente significativas en la masa muscular absoluta entre los distintos niveles de sarcopenia (p = 0.011).</p>
+<p>Estos resultados respaldan principalmente lo observado en el análisis exploratorio: si bien no se identificó una disminución progresiva clara en la masa muscular al avanzar en los niveles de sarcopenia, las diferencias entre grupos no son atribuibles al azar dentro de esta muestra.</p>
+<p>Este hallazgo sugiere que la masa muscular está relacionada con el grado de sarcopenia en los pacientes, aunque su comportamiento no sigue un patrón completamente lineal.</p>
+<hr>
+<h2 id="objetivo-11-comparación-de-escalas-de-funcionalidad-katz-y-lawton-según-osteosarcopenia">Objetivo 11. Comparación de escalas de funcionalidad (Katz y Lawton) según osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Evaluar si existen diferencias estadísticamente significativas en los puntajes de las escalas funcionales Katz y Lawton entre pacientes con y sin osteosarcopenia. En el análisis exploratorio, la escala Lawton mostró mayor dispersión en el grupo con osteosarcopenia, mientras que la escala Katz evidenció un efecto techo, con la mayoría de los pacientes concentrados en el valor máximo.</p>
+<h3 id="metodología-5">Metodología: </h3>
+<ul>
+<li>Variables analizadas:
+<ul>
+<li><em>Puntaje de Katz</em> (0 a 6): mide actividades básicas de la vida diaria.</li>
+<li><em>Resultado de lawton</em> (0 a 8): mide actividades instrumentales.</li>
+</ul>
+</li>
+<li>Comparación entre dos grupos:
+<ul>
+<li>Pacientes con osteosarcopenia.</li>
+<li>Pacientes sin osteosarcopenia.</li>
+</ul>
+</li>
+<li>Prueba estadística: Mann-Whitney U, al tratarse de puntuaciones ordinales con posibles distribuciones no normales.</li>
+</ul>
+<h3 id="resultados-5">Resultados: </h3>
+<p><strong>Katz:</strong></p>
+<ul>
+<li>Estadístico U: 296.0.</li>
+<li>p-valor: 0.078.</li>
+</ul>
+<p><em>No se encontró una diferencia estadísticamente significativa en el puntwaje de Katz entre ambos grupos (p &gt; 0.05).</em></p>
+<p><strong>Lawton:</strong></p>
+<ul>
+<li>Estadístico U: 215.0.</li>
+<li>p-valor: 0.003.</li>
+</ul>
+<p><em>Se encontró una diferencia estadísticamente significativa en el puntaje de Lawton entre pacientes con y sin osteosarcopenia (p &lt; 0.01&gt;).</em></p>
+<h3 id="conclusión-5">Conclusión: </h3>
+<p>El análisis inferencial confirmó que los pacientes con osteosarcopenia presentan una menor funcionalidad en actividades instrumentales según la escala de Lawton (p = 0.003). Este resultado coincide con lo observado visualmente en el EDA, donde el grupo con la condición mostró mayor dispersión y tendencia a menores puntajes.</p>
+<p>En contraste, la escaa Katz no mostró diferencias estadísticamente significativas entre los grupos (p = 0.078), lo cual es consistente con el efecto techo observado en el análisis exploratorio.</p>
+<p>Estos hallazgos sugieren que, dentro de esta muestra, la escala Lawton es más sensible que Katz para captar diferencias funcionales asociadas a la presencia de osteosarcopenia.</p>
+<hr>
+<h2 id="objetivo-12-relación-entre-tiempo-de-ejercicio-y-presencia-de-sarcopenia-u-osteoporosis">Objetivo 12. Relación entre tiempo de ejercicio y presencia de sarcopenia u osteoporosis. </h2>
+<p><strong>Propósito:</strong> Explorar si existe una asociación estadísticamente significativa entre el nivel de actividad física reportado (clasificado según tiempo semanal de ejercicio) y la presencia de sarcopenia u osteoporosis. En el análisis exploratorio se observaron tendencias visuales en ambos casos, con mayor prevalencia de condiciones musculoesqueléticas entre quienes reportaban no hacer ejercicio.</p>
+<h3 id="metodología-6">Metodología: </h3>
+<ul>
+<li>Variable ordinal <em>tiempo de ejercicio</em>.</li>
+<li>Condiciones analizadas por separado:
+<ul>
+<li>Sarcopenia (presencia).</li>
+<li>Osteoporosis (presencia).</li>
+</ul>
+</li>
+<li>Prueba estadística: Chi-cuadrado de independencia.</li>
+<li>Se construyeron dos tablas de contingencia y se evaluó la independencia entre las variables en cada caso.</li>
+</ul>
+<h3 id="resultados-6">Resultados </h3>
+<p><strong>Ejercico vs Sarcopenia</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tiempo de ejercicio</th>
+<th>Con sarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>29</td>
+</tr>
+<tr>
+<td>30–60 mins</td>
+<td>4</td>
+</tr>
+<tr>
+<td>61–120 mins</td>
+<td>3</td>
+</tr>
+<tr>
+<td>121–180 mins</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Más de 180 mins</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chi-cuadrado: 0.00.</li>
+<li>p-valor: 1.000.</li>
+<li>Grados de libertad: 0.</li>
+</ul>
+<p><em>No se pudo calcular diferencia entre grupos, ya que todos los casos correspondieron al grupo con sarcopenia, impiediendo una comparación válida.</em></p>
+<p><strong>Ejercicio vs Osteoporosis</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tiempo de ejercicio</th>
+<th>Sin osteoporosis</th>
+<th>Con osteoporosis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>18</td>
+<td>11</td>
+</tr>
+<tr>
+<td>30–60 mins</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>61–120 mins</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>121–180 mins</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Más de 180 mins</td>
+<td>5</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chi-cuadrado: 1.94.</li>
+<li>p-valor: 0.748.</li>
+<li>Grados de libertad: 4.</li>
+</ul>
+<p><em>No se encontró asociación estadísticamente significativa entre el nivel de ejercicio y la presencia de osteoporosis (p &gt; 0.05).</em></p>
+<h3 id="conclusión-6">Conclusión: </h3>
+<p>A pesar de que el análisis exploratorio sugirió posibles asociaciones entre menor nivel de ejercicio y mayor prevalencia de sarcopenia u osteoporosis, el análisis inferencial no encontró diferencias estadísticamente significativas.</p>
+<p>En el caso de sarcopenia, los datos disponibles no permitieron realizar una comparación válida entre grupos. Para osteoporosis, aunque huno una mayor proporción de pacientes con la condición en la categoría "no ejercicio", esta diferencia no fue significativa (p = 0.748)</p>
+<p>Estos resultados deben interpretarse con cautela y podrían estar influenciados por el tamaño reducido de la muestra o la distribución desigual de los casos en algunas categorías.</p>
+<hr>
+<h2 id="objetivo-13-asociación-entre-uso-de-medicamentos-y-osteosarcopenia">Objetivo 13. Asociación entre uso de medicamentos y osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Explorar si existe una asociación estadísticamente significativa entre el uso de tres tipos de medicamentos y la presencia de osteosarcopenia. Los grupos analizados fueron:</p>
+<ul>
+<li>Antidiabéticos.</li>
+<li>Antihipertensivos.</li>
+<li>Ansiolíticos o hipnóticos.</li>
+</ul>
+<p>En el análisis exploratorio se observaron diferencias en la distribución del uso de estos medicamentos entre los grupos, especialmente en el caso de antidiabéticos y ansiolíticos.</p>
+<h3 id="metodología-7">Metodología: </h3>
+<ul>
+<li>Se construyó una tabla de contingencia para cada tipo de medicamentos y la variable <em>osteosarcopenia</em>.</li>
+<li>Se aplicó una prueba de independencia chi-cuadrado de Pearson para evaluar si el uso del medicamento está asociado con la condición.</li>
+</ul>
+<h3 id="resultados-7">Resultados. </h3>
+<p><strong>Uso de antidiabéticos</strong></p>
+<table>
+<thead>
+<tr>
+<th>Uso de antidiabéticos</th>
+<th>Sin osteosarcopenia</th>
+<th>Con osteosarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>21</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Sí</td>
+<td>6</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chi-cuadrado: 3.32.</li>
+<li>p-valor: 0.069.<br>
+<em>No se encontró una asociación estadísticamente significativa al nivel convencional (p &lt; 0.05), aunque se observó una tendencia que podría ser relevante clínicamente.</em></li>
+</ul>
+<p><strong>Uso de antihipertensivos</strong></p>
+<table>
+<thead>
+<tr>
+<th>Uso de antihipertensivos</th>
+<th>Sin osteosarcopenia</th>
+<th>Con osteosarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Sí</td>
+<td>12</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chi-cuadrado: 0.03.</li>
+<li>p-valor: 0.871.</li>
+</ul>
+<p><em>No se observó asociación significativa entre el uso de antihipertensivos y la presencia de osteosarcopenia.</em></p>
+<p><strong>Uso de ansiolíticos</strong></p>
+<table>
+<thead>
+<tr>
+<th>Uso de ansiolíticos</th>
+<th>Sin osteosarcopenia</th>
+<th>Con osteosarcopenia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>25</td>
+<td>23</td>
+</tr>
+<tr>
+<td>Sí</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Chi-cuadrado: 0.002.</li>
+<li>p-valor: 0.965.</li>
+</ul>
+<p><em>Tampoco se encontró asocación significativa entre el uso de ansiolíticos y la presencia de la condición.</em></p>
+<h3 id="conclusión-7">Conclusión: </h3>
+<p>Dentro de esta muestra, no se encontraron asociaciones estadísticamente significativas entre el uso de antidiabéticos, antihipertensivos o ansiolíticos y la presencia de osteosarcopenia.</p>
+<p>El uso de antidiabéticos mostró una diferencia más marcada entre grupos, aunque el resultado no alcanzó significancia estadística (p = 0.069). Este patrón podría justificar un análisis más profundo con una muestra más amplia.</p>
+<hr>
+<h2 id="objetivo-14-comparación-del-riesgo-de-fractura-frax-según-presencia-de-osteosarcopenia">Objetivo 14. Comparación del riesgo de fractura (FRAX) según presencia de osteosarcopenia. </h2>
+<p><strong>Propósito:</strong> Evaluar si existen diferencias estadísticamente significativas en el riesgo estimado de fractura entre pacientes con y sin osteosarcopenia, utilizando los dos indicadores continuo proporcionados por el modelo FRAX:</p>
+<ul>
+<li>Probabilidad de fractura por fragilidad.</li>
+<li>Probabilidad de fractura de cadera.</li>
+</ul>
+<p>En el análisis exploratorio, se observaron diferencias leves en la mediana, pero sin patrones concluyentes.</p>
+<h3 id="metodología-8">Metodología: </h3>
+<ul>
+<li>Variables continuas analizadas:
+<ul>
+<li>Probabilidad de fractura por fragilidad.</li>
+<li>Probrabilidad de fractura de cadera.</li>
+</ul>
+</li>
+<li>Grupos comparados:
+<ul>
+<li>Pacientes con osteosarcopenia.</li>
+<li>Pacientes sin osteosarcopenia.</li>
+</ul>
+</li>
+<li>Se evaluó la normalidad de ambas variables por grupo mediante la prueba de Shapiro-Wilk.</li>
+<li>Al no cumplirse el supuesto de normalidad en ninguno de los casos (p &lt; 0.01), se aplicó la prueba no paramétrica de Mann-Whitney U como método principal.</li>
+</ul>
+<h3 id="resultados-8">Resultados: </h3>
+<p><strong>Riesgo de fractura por fragilidad</strong></p>
+<ul>
+<li>Prueba de normalidad: p &lt; 0.005 en ambos grupos, distribución no normal.</li>
+<li>t-test: p = 0.622.</li>
+<li>Mann-Whitney U: p = 0.682.</li>
+</ul>
+<p><em>No se encontraron diferencias estadísticamente significativas en la probabilidad de fractura por fragilidad entre los grupos (p &gt; 0.05).</em></p>
+<p><strong>Riesgo de fractura de cadera</strong></p>
+<ul>
+<li>Prueba de normalidad: p &lt; 0.001 en ambos grupos, distribución no normal.</li>
+<li>t-test: p = 0.817.</li>
+<li>Mann-Whitney U: p = 0.331.</li>
+</ul>
+<p><em>Tampoco se observaron diferencias estadísticamente significativas en la probabilidad de fractura de cadera (p &gt; 0.05).</em></p>
+<h3 id="conclusión-8">Conclusión: </h3>
+<p>Dentro de esta muestra, no se encontraron diferencias estadísticamente significativas en los valores del modelo FRAX entre pacientes con y sin osteosarcopenia, ni en la probabilidad de fractura por fragilidad ni en la de fractura de cadera.</p>
+<p>Aunque en el análisis exploratorio se observaron tendencias leves, los resultados inferenciales no respaldan una relación concluyente entre la condición osteosarcopénica y un mayor riesgo de fractura según estos indicadores.</p>
+<hr>
+<h2 id="conclusión-general">Conclusión general. </h2>
+<p>El presente análisis de inferencia estadística contempla el estudio exploratorio de osteosarcopenia mediante la aplicación de pruebas estadísticas formales que permiten evaluar si las diferencias observadas entre grupos son atribuibles al azar o estadísticamente significativas dentro de la muestra analizada.</p>
+<p>De los catorce objetivos abordados en el EDA, diex permitieron aplicar pruebas inferenciales. Los resultados más relevantes fueron los siguientes:</p>
+<ul>
+<li>Se encotnraron asociasiones estadísticamente significativas entre la osteosarcopenia y variables funcionales como el estado físico, el nivel de funcionalidad SPPB, y el puntaje Lawton, lo que respalda una relación entre esta condición y la pérdida de autonomía o capacidad funcional.</li>
+<li>También se identificaron diferencias significativas en la masa muscular absoluta según el nivel de sarcopenia, lo que sugiere un vínculo claro entre el diagnóstico clínico y las medidas antropométricas de masa muscular.</li>
+<li>Por el contrario,  no se encontraron diferencias significativas en variables como la edad, el riesgo de fractura (FRAX), el procentaje de grasa corporal, la clasificación del IMC, o el uso de medicamentos, a pesar de algunas tendencias observadas visualmente en el análisis exploratorio.</li>
+<li>En varios casos, la ausencia de significancia estadística puede estar influenciada por el tamaño reducido de la muestra, la concentración de valores (efectos techo) o la distribución no uniforme de las categorías.</li>
+</ul>
+<p>Este análisis refuerza y delimita los hallazgos exploratorios, y proporciona evidencia técnica adicional para apoyar futuras decisiones clínicas o líneas de investigación. Las asociaciones identificadas deben interpretarse dentro del contexto clínico y metodológico del estudio, y no deben considerarse concluyentes sin un respaldo externo o una muestra más amplia.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

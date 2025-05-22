@@ -367,3 +367,40 @@ De los catorce objetivos abordados en el EDA, diex permitieron aplicar pruebas i
 - En varios casos, la ausencia de significancia estadística puede estar influenciada por el tamaño reducido de la muestra, la concentración de valores (efectos techo) o la distribución no uniforme de las categorías.
 
 Este análisis refuerza y delimita los hallazgos exploratorios, y proporciona evidencia técnica adicional para apoyar futuras decisiones clínicas o líneas de investigación. Las asociaciones identificadas deben interpretarse dentro del contexto clínico y metodológico del estudio, y no deben considerarse concluyentes sin un respaldo externo o una muestra más amplia.
+
+---
+
+### Glosario de términos estadísticos aplicados:
+
+**Prueba de hipótesis:**
+Procedimiento estadístico que permite evaluar si una diferencia observada entre grupos es atribuible al azar o representa una diferencia real dentro de una muestra.
+
+**p-valor:**
+Probabilidad de obtener un resultado tan extremo como el observado (o más), si no existiera realmente diferencia entre los grupos. Un p-valor menor a 0.05 se considera habitualmente como estadísticamente significativo.
+
+**Estadísticamente significativo:**
+Se refiere a una diferencia o asociación entre grupos cuya probabilidad de ser atribuida al azar es baja (generalmente p < 0.05). Esto no implica causalidad ni relevancia clínica automática, sino evidencia suficiente para considerar que los grupos se comportan de manera distinta desde el punto de vista estadístico.
+
+**Prueba t de Student:**
+Comparación de medias entre dos grupos cuando las variables tienen distribución normal y varianzas similares.
+
+**Prueba Mann-Whitney U:**
+Alternativa no paramétrica a la prueba t. Se utiliza cuando los datos no siguen una distribución normal. Compara la posición (rango) de los valores entre dos grupos.
+
+**Prueba de Shapiro-Wilk:**
+Evaluación estadística que permite determinar si una variable sigue una distribución normal. Si el p-valor es menor a 0.05, se considera que los datos no tienen una distribución normal.
+
+**Prueba de chi-cuadrado:**
+Evalúa si existe una relación entre dos variables categóricas. Compara la distribución observada con la esperada bajo independencia.
+
+**Prueba de Kruskal-Wallis:**
+Extensión de la prueba de Mann-Whitney para comparar más de dos grupos. Se utiliza cuando se quiere analizar una variable cuantitativa según una variable categórica con más de dos niveles y los datos no son normales.
+
+**Distribución normal:**
+También conocida como curva de Gauss o campana. Es una distribución simétrica de los datos donde la mayoría de los valores se concentran alrededor de la media. Muchas pruebas estadísticas requieren que los datos se aproximen a esta forma.
+
+**Efecto techo:**
+Ocurre cuando muchos valores se agrupan en el límite superior de una escala, limitando la capacidad de detectar diferencias entre grupos.
+
+**Asociación vs. causalidad:**
+Una asociación estadística significa que dos variables están relacionadas. Esto no implica que una cause a la otra. Las pruebas realizadas en este estudio detectan asociaciones, no relaciones causales.

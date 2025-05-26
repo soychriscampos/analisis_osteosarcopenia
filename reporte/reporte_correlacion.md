@@ -1,8 +1,9 @@
 # Análisis de correlación entre variables clínicas y funcionales.
 
-**Estudio:** Osteosarcopenia Escuinapa sinaloa. 
-**Responsable clínico:** Dr. Arturo José Rizo Topete.
-**Análisis estadístico:** Christian Campos Regalado.
+**Estudio:** Osteosarcopenia en Escuinapa, Sinaloa.
+**Responsable del estudio:** Dr. Arturo José Rizo Topete.
+**Análisis estadístico:**
+Christian Campos Regalado.
 
 ---
 

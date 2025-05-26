@@ -21,37 +21,61 @@
         }
 
         h1 {
-            font-size: 2em;
-            margin-bottom: 40px;
+            font-size: 2.2em;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
 
         .button {
             background-color: #000000;
             color: #ffffff;
-            padding: 15px 30px;
-            margin: 10px;
+            padding: 14px 28px;
             border: none;
-            border-radius: 8px;
-            font-size: 1em;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            min-width: 220px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .button:hover {
-            background-color: #333333;
+            background-color: #222222;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 500px) {
+            .button {
+                width: 100%;
+                min-width: unset;
+            }
         }
     </style>
 </head>
 
 <body>
     <h1>Informes Analíticos sobre el Estudio de Osteosarcopenia</h1>
-    <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte.html"
-        target="_blank">Informe EDA</a>
-    <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_inferencial.html"
-        target="_blank">Análisis Inferencial</a>
-    <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_correlacion.html"
-        target="_blank">Análisis de Correlación</a>
+    <div class="button-container">
+        <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte.html"
+            target="_blank">Informe EDA</a>
+        <a class="button"
+            href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_inferencial.html"
+            target="_blank">Análisis Inferencial</a>
+        <a class="button"
+            href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_correlacion.html"
+            target="_blank">Análisis de Correlación</a>
+        <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_rl.html"
+            target="_blank">Modelo Predictivo</a>
+    </div>
 </body>
 
 </html>

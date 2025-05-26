@@ -10,20 +10,37 @@
             background-color: #ffffff;
             color: #000000;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
 
         h1 {
             font-size: 2.2em;
             font-weight: 600;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        .read-final {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 2px solid #000;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .read-final:hover {
+            color: #333;
+            border-color: #333;
         }
 
         .button-container {
@@ -31,6 +48,7 @@
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
+            margin-top: 50px;
         }
 
         .button {
@@ -63,7 +81,20 @@
 </head>
 
 <body>
-    <h1>Informes Analíticos sobre el Estudio de Osteosarcopenia</h1>
+    <h1>Estudio sobre Osteosarcopenia en Mujeres Adultas Mayores de Escuinapa, Sinaloa</h1>
+    <div class="description">
+        <p>Este informe integra y resume los principales hallazgos derivados de un análisis estadístico aplicado a una
+            muestra de 53 mujeres adultas mayores, como parte del estudio clínico del Dr. Arturo José Rizo Topete sobre
+            osteosarcopenia. A través de metodologías exploratorias, inferenciales, correlacionales y predictivas, se
+            identificó una alta prevalencia de la condición y su relación con indicadores clave de funcionalidad física
+            y autonomía.</p>
+        <p>El objetivo de este documento no es establecer conclusiones clínicas, sino ofrecer una guía técnica basada en
+            datos que sirva como apoyo para la futura estructuración y publicación científica del estudio.</p>
+        <a class="read-final"
+            href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/informe_final.html"
+            target="_blank">Leer informe final</a>
+    </div>
+
     <div class="button-container">
         <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte.html"
             target="_blank">Informe EDA</a>
@@ -74,7 +105,7 @@
             href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_correlacion.html"
             target="_blank">Análisis de Correlación</a>
         <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_rl.html"
-            target="_blank">Modelo Predictivo</a>
+            target="_blank">Regresión Logística</a>
     </div>
 </body>
 

@@ -27,11 +27,10 @@
 <h1 id="informe-de-regresión-logística-funcional">Informe de regresión logística funcional </h1>
 <p><strong>Estudio:</strong> Osteosarcopenia en Escuinapa, Sinaloa.<br>
 <strong>Responsable del estudio:</strong> Dr. Arturo José Rizo Topete.<br>
-<strong>Análisis estadístico:</strong><br>
-Christian Campos Regalado.</p>
+<strong>Análisis estadístico:</strong> Christian Campos Regalado.</p>
 <hr>
 <h2 id="objetivo-del-análisis">Objetivo del análisis </h2>
-<p>Este informe presenta un modelo de regresión logística binaria con el fin de estimar la probabilidad de osteosarcopenia a partir de variables funcionales clave. Se trata de un análisis complementario al estudio exploratorio, inferencia y de correlación previamente realizado. El enfoque aquí es predictivo y explicativo, útil como base para futuras hipótesis clínicas.</p>
+<p>Este informe presenta un modelo de regresión logística binaria con el fin de estimar la probabilidad de osteosarcopenia a partir de variables funcionales clave. Se trata de un análisis complementario al estudio exploratorio, inferencial y de correlación previamente realizado. El enfoque aquí es predictivo y explicativo, útil como base para futuras hipótesis clínicas.</p>
 <hr>
 <h2 id="variables-incluidas">Variables incluidas </h2>
 <p>Dado el tamaño de la muestra (n = 53), se optó por un modelo parsimonioso que incluyera sólo tres predictores, seleccionados por su relevancia clínica y su significancia previa en análisis estadísticos:</p>
@@ -86,13 +85,13 @@ Christian Campos Regalado.</p>
 </tr>
 </tbody>
 </table>
-<p>📌 <em>Nota:</em> Los intervalos de confianza al 95% indican el rango en el cual se espera que se encuentre la verdadera odds ratio con un 95% de certeza estadística. Cuando este intervalo incluye el valor 1, no puede afirmarse que exista un efecto significativo.</p>
+<p><em>Nota:</em> Los intervalos de confianza al 95% indican el rango en el cual se espera que se encuentre la verdadera odds ratio con un 95% de certeza estadística. Cuando este intervalo incluye el valor 1, no puede afirmarse que exista un efecto significativo.</p>
 <p>Aunque las variables <strong>no son estadísticamente significativas</strong> individualmente (p &gt; 0.05), el modelo completo sí lo es (LLR p-value = 0.0002), lo cual sugiere que, en conjunto, estas variables funcionales aportan información relevante sobre el riesgo de osteosarcopenia.</p>
 <hr>
 <h2 id="visualizaciones-derivadas-del-modelo">Visualizaciones derivadas del modelo </h2>
 <h3 id="1-curva-logística-sppb">1. Curva logística: SPPB </h3>
 <p><img src="../outputs/rl_sppb.png" alt="curva spp"></p>
-<p>Se observa una relación inversa: a mayor puntaje SPPB (mejor funcionalidad física), menor es la probabulidad estimada de osteosarcopenia.</p>
+<p>Se observa una relación inversa: a mayor puntaje SPPB (mejor funcionalidad física), menor es la probabilidad estimada de osteosarcopenia.</p>
 <h3 id="2-curva-logística-de-lawton">2. Curva logística de Lawton </h3>
 <p><img src="../outputs/rl_lawton.png" alt="curva lawton"></p>
 <p>También muestra una relación decreciente: a mayor autonomía en actividades instrumentales, menor es la probabilidad estimada.</p>

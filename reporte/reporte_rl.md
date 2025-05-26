@@ -2,14 +2,13 @@
 
 **Estudio:** Osteosarcopenia en Escuinapa, Sinaloa.
 **Responsable del estudio:** Dr. Arturo José Rizo Topete.
-**Análisis estadístico:**
-Christian Campos Regalado.
+**Análisis estadístico:** Christian Campos Regalado.
 
 ---
 
 ## Objetivo del análisis
 
-Este informe presenta un modelo de regresión logística binaria con el fin de estimar la probabilidad de osteosarcopenia a partir de variables funcionales clave. Se trata de un análisis complementario al estudio exploratorio, inferencia y de correlación previamente realizado. El enfoque aquí es predictivo y explicativo, útil como base para futuras hipótesis clínicas.
+Este informe presenta un modelo de regresión logística binaria con el fin de estimar la probabilidad de osteosarcopenia a partir de variables funcionales clave. Se trata de un análisis complementario al estudio exploratorio, inferencial y de correlación previamente realizado. El enfoque aquí es predictivo y explicativo, útil como base para futuras hipótesis clínicas.
 
 ---
 
@@ -42,7 +41,7 @@ El modelo calcula odds ratios (razones momios) para cada variable. Estas expresa
 | Puntaje SPPB             | 0.81 | 0.43 – 1.55   | 0.532   |
 | Puntaje Lawton           | 0.70 | 0.26 – 1.85   | 0.467   |
 
-📌 *Nota:* Los intervalos de confianza al 95% indican el rango en el cual se espera que se encuentre la verdadera odds ratio con un 95% de certeza estadística. Cuando este intervalo incluye el valor 1, no puede afirmarse que exista un efecto significativo.
+*Nota:* Los intervalos de confianza al 95% indican el rango en el cual se espera que se encuentre la verdadera odds ratio con un 95% de certeza estadística. Cuando este intervalo incluye el valor 1, no puede afirmarse que exista un efecto significativo.
 
 
 Aunque las variables **no son estadísticamente significativas** individualmente (p > 0.05), el modelo completo sí lo es (LLR p-value = 0.0002), lo cual sugiere que, en conjunto, estas variables funcionales aportan información relevante sobre el riesgo de osteosarcopenia.
@@ -55,7 +54,7 @@ Aunque las variables **no son estadísticamente significativas** individualmente
 
 ![curva spp](../outputs/rl_sppb.png)
 
-Se observa una relación inversa: a mayor puntaje SPPB (mejor funcionalidad física), menor es la probabulidad estimada de osteosarcopenia.
+Se observa una relación inversa: a mayor puntaje SPPB (mejor funcionalidad física), menor es la probabilidad estimada de osteosarcopenia.
 
 
 ### 2. Curva logística de Lawton

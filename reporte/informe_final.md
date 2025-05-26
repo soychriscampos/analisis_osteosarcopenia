@@ -1,6 +1,6 @@
 # Informe Final de Resultados y Sugerencias para Publicación del Estudio sobre Osteosarcopenia.
 
-**Responsable del estudio:** Dr. Arturo José Rizo Topete.
+**Responsable del estudio:** Dr. Arturo José Rizo Topete.  
 **Análisis técnico y estadístico:** Christian Campos Regalado.
 
 ---

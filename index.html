@@ -4,108 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informes Osteosarcopenia</title>
+    <title>Estudio sobre Osteosarcopenia</title>
     <style>
         body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             background-color: #ffffff;
             color: #000000;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 40px 20px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
         }
 
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+        }
+
         h1 {
-            font-size: 2.2em;
-            font-weight: 600;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
 
-        .description {
-            max-width: 700px;
-            margin: 0 auto 40px;
-            font-size: 1.05em;
+        p {
+            font-size: 1.1rem;
             line-height: 1.6;
+            margin-bottom: 30px;
         }
 
-        .read-final {
+        a#leer-informe {
             display: inline-block;
-            margin-top: 20px;
-            font-weight: 500;
-            text-decoration: none;
+            margin-bottom: 40px;
+            font-weight: bold;
             color: #000;
-            border-bottom: 2px solid #000;
-            transition: color 0.3s ease, border-color 0.3s ease;
+            text-decoration: underline;
+            font-size: 1.1rem;
         }
 
-        .read-final:hover {
-            color: #333;
-            border-color: #333;
-        }
-
-        .button-container {
+        .button-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
             justify-content: center;
-            margin-top: 50px;
+            gap: 20px;
         }
 
         .button {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 14px 28px;
+            background-color: #000;
+            color: #fff;
             border: none;
-            border-radius: 6px;
+            padding: 14px 24px;
+            border-radius: 8px;
             font-size: 1rem;
-            font-weight: 500;
             cursor: pointer;
             text-decoration: none;
-            min-width: 220px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            /* Tamaño uniforme */
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #222222;
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 500px) {
-            .button {
-                width: 100%;
-                min-width: unset;
-            }
+            background-color: #444;
         }
     </style>
 </head>
 
 <body>
-    <h1>Estudio sobre Osteosarcopenia en Mujeres Adultas Mayores de Escuinapa, Sinaloa</h1>
-    <div class="description">
-        <p>Este informe integra y resume los principales hallazgos derivados de un análisis estadístico aplicado a una
-            muestra de 53 mujeres adultas mayores, como parte del estudio clínico del Dr. Arturo José Rizo Topete sobre
-            osteosarcopenia. A través de metodologías exploratorias, inferenciales, correlacionales y predictivas, se
-            identificó una alta prevalencia de la condición y su relación con indicadores clave de funcionalidad física
-            y autonomía.</p>
-        <p>El objetivo de este documento no es establecer conclusiones clínicas, sino ofrecer una guía técnica basada en
-            datos que sirva como apoyo para la futura estructuración y publicación científica del estudio.</p>
-        <a class="read-final"
-            href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/informe_final.html"
-            target="_blank">Leer informe final</a>
-    </div>
+    <div class="container">
+        <h1>Estudio sobre Osteosarcopenia en Mujeres Adultas Mayores de Escuinapa, Sinaloa</h1>
+        <p>
+            Este informe integra y resume los principales hallazgos derivados de un análisis estadístico
+            aplicado a una muestra de 53 mujeres adultas mayores, como parte del estudio clínico del
+            Dr. Arturo José Rizo Topete sobre osteosarcopenia. A través de metodologías exploratorias,
+            inferenciales, correlacionales y predictivas, se identificó una alta prevalencia de la condición
+            y su relación con indicadores clave de funcionalidad física y autonomía.
+        </p>
+        <p>
+            El objetivo de este documento no es establecer conclusiones clínicas, sino ofrecer una guía
+            técnica basada en datos que sirva como apoyo para la futura estructuración y publicación
+            científica del estudio.
+        </p>
 
-    <div class="button-container">
-        <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte.html"
-            target="_blank">Informe EDA</a>
-        <a class="button"
-            href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_inferencial.html"
-            target="_blank">Análisis Inferencial</a>
-        <a class="button"
-            href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_correlacion.html"
-            target="_blank">Análisis de Correlación</a>
-        <a class="button" href="https://soychriscampos.github.io/analisis_osteosarcopenia/reporte/reporte_rl.html"
-            target="_blank">Regresión Logística</a>
+        <a id="leer-informe" href="/informe-final.html">Leer informe final</a>
+
+        <div class="button-group">
+            <a href="/eda.html" class="button">Informe EDA</a>
+            <a href="/inferencial.html" class="button">Análisis Inferencial</a>
+            <a href="/correlacion.html" class="button">Análisis de Correlación</a>
+            <a href="/regresion.html" class="button">Regresión Logística</a>
+        </div>
     </div>
 </body>
 
